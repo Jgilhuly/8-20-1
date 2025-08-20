@@ -132,6 +132,69 @@
         <p>&copy; 2024 Company Name. All rights reserved. | Internal Use Only</p>
     </footer>
 
+    <!-- Time Off Request Modal -->
+    <div id="timeOffModal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">📅 Request Time Off</h2>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="timeOffForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="startDate" class="form-label required">Start Date</label>
+                            <input type="date" id="startDate" name="startDate" class="form-control" required>
+                            <div class="form-error">Please select a start date</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="endDate" class="form-label required">End Date</label>
+                            <input type="date" id="endDate" name="endDate" class="form-control" required>
+                            <div class="form-error">Please select an end date</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="timeOffType" class="form-label required">Type of Leave</label>
+                        <select id="timeOffType" name="timeOffType" class="form-control form-select" required>
+                            <option value="">Select leave type...</option>
+                            <option value="vacation">Vacation/PTO</option>
+                            <option value="sick">Sick Leave</option>
+                            <option value="personal">Personal Day</option>
+                            <option value="family">Family Leave</option>
+                            <option value="bereavement">Bereavement</option>
+                            <option value="jury">Jury Duty</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="form-error">Please select a leave type</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reason" class="form-label">Reason/Notes</label>
+                        <textarea id="reason" name="reason" class="form-control form-textarea" 
+                                  placeholder="Optional: Brief explanation of your time off request..." rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="halfDay" class="form-label">Duration</label>
+                        <select id="halfDay" name="halfDay" class="form-control form-select">
+                            <option value="full">Full Day(s)</option>
+                            <option value="morning">Half Day - Morning</option>
+                            <option value="afternoon">Half Day - Afternoon</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelTimeOff">Cancel</button>
+                <button type="submit" form="timeOffForm" class="btn btn-primary" id="submitTimeOff">
+                    <span class="submit-text">Submit Request</span>
+                    <div class="loading-spinner" style="display: none;"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="js/app.js"></script>
     <script src="js/components.js"></script>
 </body>
