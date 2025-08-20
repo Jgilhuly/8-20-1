@@ -154,8 +154,6 @@
 .link-icon {
     font-size: 1.1rem;
 }
-<<<<<<< Current (Your changes)
-=======
 
 /* Modal Styles */
 .modal-overlay {
@@ -384,4 +382,3 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
->>>>>>> Incoming (Background Agent changes)
