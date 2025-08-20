@@ -1,0 +1,8 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+This project has a frontend built in CSS, JS, and HTML and backend in node.js
+

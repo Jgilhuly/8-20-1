@@ -1,0 +1,186 @@
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 0 1.5rem;
+    }
+    
+    .content-grid {
+        gap: 1.5rem;
+    }
+    
+    .quick-actions {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .main-container {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+    
+    .welcome-section {
+        padding: 1.5rem;
+    }
+    
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .quick-actions {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .action-card {
+        padding: 1rem;
+    }
+    
+    .sidebar {
+        order: -1;
+    }
+    
+    .employee-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+    
+    .stat-item {
+        padding: 0.75rem;
+    }
+    
+    .stat-number {
+        font-size: 1.25rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .welcome-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .welcome-section p {
+        font-size: 1rem;
+    }
+    
+    .action-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .action-card p {
+        font-size: 0.85rem;
+    }
+    
+    .employee-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .widget {
+        padding: 1rem;
+    }
+    
+    .announcements {
+        padding: 1rem;
+    }
+    
+    .announcement-item h4 {
+        font-size: 1rem;
+    }
+    
+    .announcement-item p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .header-content {
+        flex-direction: row;
+    }
+    
+    .welcome-section {
+        padding: 1rem 2rem;
+    }
+    
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .action-card,
+    .widget,
+    .announcements {
+        border: 0.5px solid var(--border-color);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .action-card,
+    .quick-actions {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .welcome-section,
+    .announcements,
+    .widget {
+        background: white;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* Theme Toggle Button Responsive Adjustments */
+@media (max-width: 768px) {
+    .theme-toggle {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .header-content {
+        padding-right: 3rem; /* Make room for theme toggle */
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-toggle {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .header-content {
+        padding-right: 2.5rem;
+    }
+}

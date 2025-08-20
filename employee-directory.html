@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory - Company Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/employee-directory.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">🏢 Company Portal</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="#hr">HR</a></li>
+                    <li><a href="#it">IT Support</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="page-header">
+            <h1>👥 Employee Directory</h1>
+            <p>Manage and view company employee information</p>
+        </section>
+
+        <section class="employee-stats" id="employee-stats">
+            <!-- Stats will be loaded here -->
+        </section>
+
+        <section class="employee-filters" id="employee-filters">
+            <!-- Filters will be loaded here -->
+        </section>
+
+        <section class="employee-list" id="employee-list">
+            <!-- Employee list will be loaded here -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Company Name. All rights reserved. | Internal Use Only</p>
+    </footer>
+
+    <!-- Load scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/employee-directory.js"></script>
+</body>
+</html>

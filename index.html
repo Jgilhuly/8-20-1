@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Portal - Employee Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">🏢 Company Portal</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#hr">HR</a></li>
+                    <li><a href="#it">IT Support</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="welcome-section">
+            <h1>Welcome back, Employee!</h1>
+            <p>Here's what's happening today at Company Name</p>
+        </section>
+
+        <section class="quick-actions">
+            <div class="action-card" data-action="time-off">
+                <div class="action-icon">📅</div>
+                <h3>Request Time Off</h3>
+                <p>Submit vacation and PTO requests</p>
+            </div>
+            <div class="action-card" data-action="paystub">
+                <div class="action-icon">💰</div>
+                <h3>View Paystub</h3>
+                <p>Access your latest pay information</p>
+            </div>
+            <div class="action-card" data-action="performance">
+                <div class="action-icon">📊</div>
+                <h3>Performance Review</h3>
+                <p>Check your goals and feedback</p>
+            </div>
+            <div class="action-card" data-action="it-support">
+                <div class="action-icon">🆘</div>
+                <h3>IT Support</h3>
+                <p>Get help with technical issues</p>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <section class="announcements">
+                <h2>📢 Company Announcements</h2>
+                <div class="announcement-item">
+                    <h4>New Office Policy Update</h4>
+                    <p>Updated hybrid work policy effective next month. All employees are required to be in office 3 days per week.</p>
+                    <div class="announcement-date">Posted: 2 hours ago</div>
+                </div>
+                <div class="announcement-item">
+                    <h4>Quarterly All-Hands Meeting</h4>
+                    <p>Join us this Friday at 2 PM for our quarterly company update. We'll discuss Q4 goals and achievements.</p>
+                    <div class="announcement-date">Posted: 1 day ago</div>
+                </div>
+                <div class="announcement-item">
+                    <h4>New Employee Benefits</h4>
+                    <p>Enhanced health insurance coverage and new wellness programs available starting next month.</p>
+                    <div class="announcement-date">Posted: 3 days ago</div>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>📈 Employee Stats</h3>
+                    <div class="employee-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">247</div>
+                            <div class="stat-label">Total Employees</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">New This Month</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">89%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Open Positions</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3>🔗 Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#handbook"><span class="link-icon">📋</span> Employee Handbook</a></li>
+                        <li><a href="employee-directory.html"><span class="link-icon">📊</span> Company Directory</a></li>
+                        <li><a href="#calendar"><span class="link-icon">📅</span> Company Calendar</a></li>
+                        <li><a href="#benefits"><span class="link-icon">🏥</span> Benefits Portal</a></li>
+                        <li><a href="#knowledge-base"><span class="link-icon">💻</span> IT Knowledge Base</a></li>
+                        <li><a href="#hr-contact"><span class="link-icon">📧</span> Contact HR</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>⏰ Upcoming Events</h3>
+                    <div class="announcement-item">
+                        <h4>Team Building</h4>
+                        <p>Next Friday, 3 PM</p>
+                        <div class="announcement-date">Department: Engineering</div>
+                    </div>
+                    <div class="announcement-item">
+                        <h4>Training Session</h4>
+                        <p>New Security Protocols</p>
+                        <div class="announcement-date">Tomorrow, 10 AM</div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Company Name. All rights reserved. | Internal Use Only</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>
